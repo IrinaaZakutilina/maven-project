@@ -1,1 +1,0 @@
-# Hello Java Automation courses =) 
