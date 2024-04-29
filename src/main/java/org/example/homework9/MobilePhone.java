@@ -2,11 +2,14 @@ package org.example.homework9;
 import java.util.ArrayList;
 
 public class MobilePhone {
-    private final ArrayList<Contact> myContacts;
+    private String myNumber;
+    private ArrayList<Contact> myContacts;
 
     public MobilePhone(String myNumber) {
-        this.myContacts = new ArrayList<>();
+        this.myNumber = myNumber;
+        this.myContacts = new ArrayList<>();;
     }
+
     public boolean addNewContact(Contact contact) {
         if (findContact(contact.getName()) >= 0) {
             System.out.println("Contact with name " + contact.getName() + " already exists.");
